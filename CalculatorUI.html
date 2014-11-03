@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Calculator</title>
+<script type="text/javascript" src="createusers.js"></script>
+</head>
+<body>
+
+<h2>CALCULATOR</h2>
+
+<form name="calculator" action = "http://127.0.0.1:1337">
+<fieldset>
+<legend>Standard Calculator</legend>
+<br>
+
+<input type="radio" name="calc" value="a">Addition
+<input type="radio" name="calc" value="s">Subtraction
+<input type="radio" name="calc" value="m">Multiplication
+<input type="radio" name="calc" value="d">Division<br><br>
+
+A: <input  type="textfield" name="value1" value=""><br>
+
+B: <input  type="textfield" name="value2" value=""><br><br>
+
+<input type="submit"  value="ANSWER" ><br>
+
+</fieldset>
+</form>
+<form name ="generateUsers"><br>
+<button type= "button" name ="users" onClick = "create();">Users</button>
+
+<a id='yourLinkID' href = "http://127.0.0.1:1337/?calc=a&value1=4&value2=5">Click here</a>
+</form>
+</body>
+</html>
